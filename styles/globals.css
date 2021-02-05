@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@import url('./loading.css');
+
+
+@import url('./navbar.css');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: -apple-system, 'Poppins', sans-serif, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    /* background-color: #051937; 
+    color: aliceblue; */
 }
+
+
 
 a {
   color: inherit;
@@ -14,3 +25,201 @@ a {
 * {
   box-sizing: border-box;
 }
+.btn{
+  border-radius: 2rem;
+}
+
+
+/*.............Home Page........*/ 
+
+.home_page_display_pic{
+  width: 18rem;
+  height: 20rem;
+  margin-top: 5rem;
+  text-align: center;
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce { 
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50px); }
+   }
+
+
+
+
+
+
+
+
+
+
+
+/*.............Contact Page........*/ 
+.thm-container {
+  width: 100%;
+  max-width: 1000px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.contact-form-content {
+  padding: 80px 0;
+  padding-left: 10px;
+  padding-right: 10px;
+border-radius: 2rem;
+}
+
+.thm-container .title {
+  margin-bottom: 50px;
+}
+
+
+.thm-container .title h2 {
+  /* color: #fff; */
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  /* border: none; */
+  outline: none;
+  width: 100%;
+  height: 68px;
+  border-radius: 35px;
+  background: #fff;
+  color: #757575;
+  font-size: 16px;
+  padding-left: 50px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.contact-form textarea {
+  height: 100px;
+  padding-top: 20px;
+}
+
+
+
+.contact-info {
+  margin-left: -30px;
+  padding-top: 75px;
+  padding-bottom: 80px;
+}
+
+.single-contact-info h4 {
+  /* color:  #EBEDF4; */
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.contact-info .social a {
+  margin-right: 5px;
+  font-size:25px;
+}
+
+/*.............GWS PAGE........*/ 
+
+.box{
+  
+  box-shadow: 0 4px 8px 0 rgba(0.9, 0.2, 0.2, 0.9);
+  border-radius: 1rem; 
+  padding: 40px 10px;
+  margin: 20px 0px;
+  
+}
+
+.box:hover{
+  background: #FFF;
+  color: #051937;
+  cursor: pointer; 
+}
+
+ul.gws_imgs li {
+  list-style: none;
+  display: inline;
+}
+
+.google_computer{
+  width: 18rem;
+  height: 10.5rem;
+}
+
+.gws_first_div, .gws_third_div{
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+
+
+/*.............GCP...........*/
+
+/*********The Whole DIV**************/
+.circular-menu {
+  position: fixed;
+  bottom: 20rem;
+  right: 6.4rem;
+}
+
+  /*********The Font Awesome + icon**************/
+.circular-menu .floating-btn i {
+  font-size: 5rem;
+  padding-top: 2.5rem;
+  transition: transform .2s;  
+}
+/*********The  small Font Awesome  icon********   for adjustments take not of the top and right properties ******/
+.circular-menu .menu-item {
+  position: absolute;
+  /* top: .1rem; */
+  right: .1rem;
+  z-index: -1;
+  display: block;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3;
+  transition: transform .3s ease, background .2s ease;
+}
+
+
+/*********Left one******/
+ .menu-item:nth-child(1) {
+  left: -3.4em;
+  top: 2em;
+}
+
+/*********Top ******/
+.circular-menu .menu-item:nth-child(2) {
+  position: absolute;
+  left: 1.5em;
+  top: -3.5em;
+}
+/*********right ******/
+.circular-menu .menu-item:nth-child(3) {
+  position: absolute;
+  left: 6.8em;
+  top: 2em;
+}
+
+/*********bottom one ******/
+.circular-menu .menu-item:nth-child(4) {
+  position: absolute;
+  left: 2em;
+  top: 6.7em;
+}
+
+/*...............................................
+...........OTHER PAGES/ COMPONENTS CSS..........*/
+
+@import url('./footer.css');

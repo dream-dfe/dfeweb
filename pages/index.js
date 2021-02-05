@@ -1,65 +1,85 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
-export default function Home() {
+
+
+const Home = (props) => {
+    
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div style={{minHeight: '100vh'}}>
+            <Head>
+              <title>DFE | Home</title>
+            </Head>
+            
+      <div style={{ width: '90%', margin: '2rem auto' }}> 
+      
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+          <div className='row' style={{ marginTop: '9rem' }}>
+              <div className='col-md-6'>
+                    <h1>Technological and Innovative Solutions </h1>
+                    <br/>
+                    <br/>
+                    <p> Dream Factory Enterprise is a leader in 
+                    <br/>
+                    <br/>
+                    Educational Technology, it has helped ......</p>
+                    <Link href='/about'>
+                      <a className='btn btn-primary'> Learn More...</a>
+                    </Link>
+              </div>
+              <div className='col-md-6'>
+                  <img className='home_page_display_pic' src='/tech.png' alt='bouncing image' />
+              </div>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+              <div  className='row ' style={{ margin: '3rem auto' }} >
+                    <div className='col-md-6 text-center'>
+                    <img className='cloud_pic' src='/cloud.png' alt='gcloudpartner' />
+                    </div>
+                    <div className='col-md-6 text-center'>
+                    <h2> Google Cloud <br/> Partner</h2>
+                    <p> We are proud to be working with a Big <br/> tech giant on a number of projects in the <br/> Educational Sector</p>
+                    <Link href='/about'>
+                      <a className='btn btn-primary'> See Us here...</a>
+                    </Link>
+                    </div>  
+              </div>
+              
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+              <div className='text-center ' style={{margin: '3rem 0'}}>
+                <h2> Our impact in the Education</h2>
+                      <div className='row'>
+                      <div className='col-md-4'>
+                              <i className="fas fa-school" style={{fontSize: '2rem'}} aria-hidden='true'></i>
+                                <h4> 60+ Schools</h4>
+                                   <p>Google for Education</p>
+                                   <p> Account Set Up and Deployment</p>
+                                </div>
+                                <div className='col-md-4'>
+                                <i className="fas fa-users" style={{fontSize: '2rem'}} aria-hidden='true'></i>
+                                <h4>19 900+ Learners</h4>
+                                   <p>Learner School Accounts</p>
+                                   <p> Online Learning tools Demos</p>
+                                </div>
+                                <div className='col-md-4'>
+                                <i className="fas fa-chalkboard-teacher" style={{fontSize: '2rem'}} aria-hidden='true'></i>
+                                <h4> 800+  Teachers</h4>
+                                   <p>Pro Accounts Created</p>
+                                   <p> Google Classroom Demos, Collaboration tools </p>
+                                </div>
+                       </div>
+              </div>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          </div>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+            
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
   )
 }
+
+
+
+
+export default Home
