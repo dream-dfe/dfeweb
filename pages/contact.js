@@ -6,6 +6,7 @@ import {formValid } from '../utils/valid'
 
 
 const Contact = () => {
+    
 
         const [Message, setMessage] = useState({name: '', email: '', message: ''})
         const {name,  email, message} = Message
