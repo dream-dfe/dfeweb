@@ -40,10 +40,12 @@ const Contact = () => {
        
            }
 
-
+           
 
 
     return (
+
+        
         <div style={{minHeight: '100vh'}}>
             <Head>
               <title>DFE | Contact</title>

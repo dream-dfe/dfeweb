@@ -11,6 +11,8 @@ const oauth2Client = new google.auth.OAuth2(
     OAUTH_PLAYGROUND
 )
 
+
+
 export default async (req,res) => {
     switch(req.method) {
         case 'POST':
@@ -29,8 +31,9 @@ export default async (req,res) => {
             
             oauth2Client.setCredentials({
                 refresh_token: process.env.MAILING_SERVICE_REFRESH_TOKEN
+                
             })
-
+            
             
                 const accessToken = await oauth2Client.getAccessToken()
             const smtpTransport = nodemailer.createTransport({
@@ -65,6 +68,7 @@ export default async (req,res) => {
                 `
             };
         
+           
          smtpTransport.sendMail(mailOptions, ( info) => {
                     console.log("Mail Sent");
                     res.json({msg: 'Message Sent'});

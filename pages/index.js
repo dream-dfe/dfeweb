@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const Home = (props) => {
     
-
+  console.log(process.env.MAILING_SERVICE_CLIENT_ID);
   return (
     <div style={{minHeight: '100vh'}}>
             <Head>
@@ -17,13 +17,13 @@ const Home = (props) => {
 
           <div className='row' style={{ marginTop: '9rem' }}>
               <div className='col-md-6'>
-                    <h1>Technological and Innovative Solutions </h1>
+                    <h1>Technology and Innovation Solutions </h1>
                     <br/>
                     <br/>
-                    <p> Dream Factory Enterprise is a leader in 
-                    <br/>
-                    <br/>
-                    Educational Technology, it has helped ......</p>
+                    <p> Discover endless possibilities for Education and Workspace solutions. 
+                      What you need for a thriving institution or business is a process being supplemented by custom tailored technology systems that we provide. 
+                      With the right technology in place, you are certainly an exceptional industry leader in your cosmos. 
+                   </p>
                     <Link href='/about'>
                       <a className='btn btn-primary'> Learn More...</a>
                     </Link>
