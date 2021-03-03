@@ -21,7 +21,7 @@ const NavBar = () => {
                         </li>
 
                         <li className=" dropdown ">
-                        <Link href='#'> 
+                        <Link href='/services'> 
                         <a className="nav-item nav-link " >
                         Services
                         </a>
@@ -31,7 +31,6 @@ const NavBar = () => {
                             <li> <Link href='/gws'>Google Workspace </Link></li>
                             <li> <Link href='/gcp'>Google Cloud Platform </Link></li>
                             <li> <Link href='/workshops'>Workshops & Tainings </Link></li>
-                            <li> <Link href='/consult'>Consultancy Services </Link></li>
                            
                         </ul>
                         </li>

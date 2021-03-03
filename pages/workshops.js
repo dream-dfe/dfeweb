@@ -12,6 +12,17 @@ const WorkShops = () => {
             <div style={{ width: '90%', margin: '2rem auto' }}> 
             <h1> WorkShops and Trainings</h1>
 
+           
+
+
+
+
+
+
+
+
+
+
             </div>
         </div>
     )
